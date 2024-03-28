@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSHPOM</title>
+    <link rel="stylesheet" type="text/css" href="../css/results.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="header-container">
+            <div class="menu-item1">HIRG</div>
+            <div class="menu-item2"><a href="#">Home</a></div>
+            <div class="menu-item3"><a href="#">Aims & Scope</a></div>
+            <div class="menu-item4"><a href="#">Team</a></div>
+            <div class="menu-item5"><a href="#">Models</a></div>
+        </div>
+        <div class="bottom-container">
+            <div id="map"></div>
+            <div class="bottom-right-container">
+                <div class="check-info">
+                    <span>Check the water level of the node by <strong style="color: #222222;">clicking</strong> it.</span>
+                </div>
+                <div class="download-results">
+                    <button type="button" id="download-results" onclick="download_result()">
+                        <img src="../img/download-results.svg" alt="download result" width="240px">
+                    </button>
+                </div>
+                <div class="results-info">(Include updated input file, report file, output file)</div>
+                <div class="back">
+                    <button type="submit" onclick="back()">
+                        <img src="../img/back.svg" alt="back" width="170px">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../routes/map_marker.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBj0fhOY5pxKCd7AsScDP3bAwpa7cWqZ3w&callback=initMap&language=en"></script>
+    <script src="../js/runGA_results.js"></script>
+    <script src="../js/back.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+html {
+    background-color: #e1f1fd;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px 915px 0px 45px; */
+    width: fit-content;
+    padding-top: 10px;
+    padding-left: 45px;
+    
+}
+
+.menu-item1 {
+    color:#222222;
+    font-weight: bold;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.menu-item3 {
+    width: max-content;
+}
+
+.menu-item2,
+.menu-item3,
+.menu-item4,
+.menu-item5 {
+    color:#222222;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.bottom-container {
+    display: flex;
+    margin-top: 7%;
+}
+
+.bottom-left-container {
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    width: 47%;
+}
+
+.upload-file {
+    position: relative;
+    top: 20%;
+    text-align: center;
+}
+
+.upload-file img:hover {
+    cursor: pointer;
+}
+
+#fileCount {
+    position: relative;
+    text-align: center;
+    width: fit-content;
+    font-size: 18px;
+    color: darkgrey;
+    margin: 0 auto;
+}
+
+.upload-file button {
+    border: none;
+    background: none;
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+}
+
+.run-a-simulation{
+    position: relative;
+    top: 30%;
+}
+
+.run-a-simulation button {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.run-a-simulation button:hover {
+    cursor: pointer;
+}
+
+.progress-bar {
+    position: absolute;
+    left: 23px;
+    width: 206px;
+    height: 16px;
+    background: #6a6a6a;
+    border-radius: 13px;
+    padding: 3px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.progress {
+    width: 0px;
+    height: 10px;
+    background: #E1F1FD;
+    border-radius: 13px;
+    display: none;
+}
+
+.percent {
+    position: absolute;
+    top: 90px;
+    left: 107px;
+    color: darkgrey;
+    font-size: 18px;
+    text-align: center;
+    display: none;
+}
+
+.back {
+    position: relative;
+    top: 40%;
+}
+
+.back button {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.back button:hover {
+    cursor: pointer;
+}
+
+#map {
+    width: 100%;
+    height: 670px;
+    border: 2px solid #222222;
+}

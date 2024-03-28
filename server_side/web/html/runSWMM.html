@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSHPOM</title>
+    <link rel="stylesheet" type="text/css" href="../css/runSWMM.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="header-container">
+            <div class="menu-item1">HIRG</div>
+            <div class="menu-item2"><a href="#">Home</a></div>
+            <div class="menu-item3"><a href="#">Aims & Scope</a></div>
+            <div class="menu-item4"><a href="#">Team</a></div>
+            <div class="menu-item5"><a href="#">Models</a></div>
+        </div>
+        <div class="bottom-container">
+            <div class="bottom-left-container">
+                <div class="upload-file">                  
+                    <form id="uploadForm" enctype="multipart/form-data">
+                        <div id="fileCount">No file chosen</div>
+                        <label for="myFiles" class="file-input-label">
+                            <img id="upload-file" src="../img/upload-file.svg" alt="upload input file" width="230px">
+                        <input type="file" id="myFiles" name="myFiles" accept=".inp, .rpt, .out" multiple style="display: none;" onchange="sendFiles(); updateFileCount()"/><br>
+                        
+                        <button id="submit">
+                            <img src="../img/submit.svg" alt="submit" width="100px"> 
+                        </button>
+                    </form>
+                </div>
+
+                <div class="run-a-simulation">
+                    <button type="submit" onclick="run_a_simulation(); runSWMM_progress_bar()">
+                        <img src="../img/run-a-simulation.png" alt="run a simulation" width="250px">
+                    </button>
+                    <div class="loading">
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="percent">0%</div>
+                    </div>
+                </div>
+                <div class="back">
+                    <button type="submit" onclick="back()">
+                        <img src="../img/back.svg" alt="back" width="170px">
+                    </button>
+                </div>
+            </div>
+            <div id="map"></div>
+        </div>
+    </div>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBj0fhOY5pxKCd7AsScDP3bAwpa7cWqZ3w&language=en"></script>    
+    <script src="../js/initMap.js"></script>
+    <script src="../js/map_marker.js"></script>
+    <script src="../js/file_process.js"></script>
+    <script src="../js/run_a_simulation.js"></script>
+    <script src="../js/runSWMM_progress_bar.js"></script>
+    <script src="../js/back.js"></script>
+</body>
+</html>
