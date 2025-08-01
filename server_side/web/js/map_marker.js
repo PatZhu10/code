@@ -15,7 +15,7 @@ function map_marker(coordinates) {
     ];
     const map = new google.maps.Map(document.getElementById("map"), {
         styles: mapStyles
-      });
+    });
 
     let infoWindow = new google.maps.InfoWindow(); // Create a single info window
     let bounds = new google.maps.LatLngBounds(); // Initialize bounds to fit all coordinates

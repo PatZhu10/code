@@ -6,6 +6,7 @@ const archiver = require('archiver');
 const path = require('path');
 
 router.post('/', (req, res) => {
+
     // Array of file paths to include in the zip
     const parentDir = path.join(__dirname, '..', '..');
     const files = [

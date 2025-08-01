@@ -1,7 +1,5 @@
 // client_side/web/js/file_process.js
 
-// import { map_marker } from './map_marker.js';
-
 async function sendFiles() {
     const form = document.getElementById('uploadForm');
 
@@ -21,8 +19,10 @@ async function sendFiles() {
         });
 
         const coordinates = await response.json(); // Parse the JSON response
-        console.log(coordinates);    
+        // console.log(coordinates);
         map_marker(coordinates);
+
+        localStorage.setItem('coordinates', JSON.stringify(coordinates));
     }
 
     form.addEventListener('submit', (e) => {

@@ -1,3 +1,0 @@
-/home/patzhu/code/CSHPOM/swmm522_engine/build/CMakeFiles/swmm5.dir
-/home/patzhu/code/CSHPOM/swmm522_engine/build/CMakeFiles/edit_cache.dir
-/home/patzhu/code/CSHPOM/swmm522_engine/build/CMakeFiles/rebuild_cache.dir

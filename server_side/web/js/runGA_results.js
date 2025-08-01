@@ -1,4 +1,20 @@
-//  server_side/html/js/download_result.js
+//  server_side/html/js/runGA_results.js
+
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        const response = await fetch('../user_data/optimized_node_head.json');
+        if (!response.ok) {
+            throw new Error('Failed to fetch data');
+        }
+        const node_head = await response.json();
+        const node_info = localStorage.getItem('coordinates');
+        const parsed_node_info = JSON.parse(node_info);
+        map_marker_results(parsed_node_info, node_head); // Pass the data to the map_marker_results function
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
+
+});
 
 function download_result() {
     // Get the download button by its ID

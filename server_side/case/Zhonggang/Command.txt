@@ -1,0 +1,11 @@
+[build]
+cd GAlib;make;cd ..;cd ./swmm522_engine/build;cmake ..;cmake --build .;cd ../../;g++ -I. cspos.cpp -o cspos -L./GAlib -L./swmm522_engine/build -lga -lswmm5;export LD_LIBRARY_PATH=./GAlib:./swmm522_engine/build
+
+[HELP]
+cd GAlib;make;cd ..;cd ./swmm522_engine/build;cmake ..;cmake --build .;cd ../../;g++ -I. cspos.cpp -o cspos -L./GAlib -L./swmm522_engine/build -lga -lswmm5;export LD_LIBRARY_PATH=./GAlib:./swmm522_engine/build;./cspos -h
+
+[RUNSWMM]
+cd GAlib;make;cd ..;cd ./swmm522_engine/build;cmake ..;cmake --build .;cd ../../;g++ -I. cspos.cpp -o cspos -L./GAlib -L./swmm522_engine/build -lga -lswmm5;export LD_LIBRARY_PATH=./GAlib:./swmm522_engine/build;./cspos ../case/../../../tMofy-web-api/Zhonggang/Zhonggang.inp ../case/../../../tMofy-web-api/Zhonggang/Zhonggang.rpt ../case/../../../tMofy-web-api/Zhonggang/Zhonggang.out ../case/../../../tMofy-web-api/Zhonggang/WLS_file.txt
+
+[RUNGA] WLS file - All Node
+cd GAlib;make;cd ..;cd ./swmm522_engine/build;cmake ..;cmake --build .;cd ../../;g++ -I. cspos.cpp -o cspos -L./GAlib -L./swmm522_engine/build -lga -lswmm5;export LD_LIBRARY_PATH=./GAlib:./swmm522_engine/build;./cspos -o ../case/Zhonggang/Zhonggang.inp ../case/Zhonggang/Zhonggang.rpt ../case/Zhonggang/Zhonggang.out ../case/Zhonggang/WLS_file.txt

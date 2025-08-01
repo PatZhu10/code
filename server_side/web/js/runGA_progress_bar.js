@@ -4,7 +4,7 @@ function runGA_progress_bar() {
     var percent = document.querySelector('.percent');
     var count = 1;
     var per = 2;
-    var loading = setInterval(animate, 460);
+    var loading = setInterval(animate, 690);
 
     percent.style.display = "block";
     progress.style.display = "block";

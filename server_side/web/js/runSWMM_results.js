@@ -1,4 +1,20 @@
-//  server_side/html/js/download_result.js
+//  client_side/html/js/runSWMM_results.js
+
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        const response = await fetch('../user_data/node_head.json');
+        if (!response.ok) {
+            throw new Error('Failed to fetch data');
+        }
+        const node_head = await response.json();
+        const node_info = localStorage.getItem('coordinates');
+        const parsed_node_info = JSON.parse(node_info);
+        map_marker_results(parsed_node_info, node_head); // Pass the data to the map_marker_results function
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
+
+});
 
 function download_result() {
     // Get the download button by its ID
@@ -14,6 +30,7 @@ function download_result() {
         fetch('/runSWMM_results', {
             method: 'POST',
             body: formData // Send any necessary data with the request
+
         })
         .then(response => {
             if (!response.ok) {
@@ -35,6 +52,8 @@ function download_result() {
             a.click();
             // Revoke the object URL to free up memory
             window.URL.revokeObjectURL(url);
+
+
         })
         .catch(error => {
             console.error('There was a problem with the download:', error);

@@ -4,6 +4,7 @@ const { Router } = require('express');
 const fileUpload = require('express-fileupload');
 const router = Router();
 let targetPath;
+let inpFileName;
 
 const read_convert_coordinate = require('./read_convert_coordinate');
 
@@ -51,7 +52,7 @@ router.post('/', async (req, res) => {
         const targetPath = `../user_data/${inpFileName}`;
         try {
             const coordinates = await read_convert_coordinate(targetPath);
-            console.log('Coordinates:', coordinates);
+            // console.log('Coordinates:', coordinates);
             return res.json(coordinates);
         } catch (error) {
             console.error('Error reading coordinates:', error);

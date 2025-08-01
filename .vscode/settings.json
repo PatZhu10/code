@@ -83,7 +83,24 @@
         "GAStringGenome.C": "cpp",
         "GATree.C": "cpp",
         "GATreeBASE.C": "cpp",
-        "GATreeGenome.C": "cpp"
+        "GATreeGenome.C": "cpp",
+        "shared_memory.C": "cpp",
+        "cstring": "cpp",
+        "list": "cpp",
+        "mapToSharedMemory.C": "cpp",
+        "sendDataToServer.C": "cpp",
+        "socket_utils.C": "cpp",
+        "socketUtils.C": "cpp",
+        "getOptimizedNodeHead.C": "cpp",
+        "any": "cpp",
+        "chrono": "cpp",
+        "codecvt": "cpp",
+        "forward_list": "cpp",
+        "map": "cpp",
+        "optional": "cpp",
+        "ratio": "cpp",
+        "ranges": "cpp",
+        "valarray": "cpp"
     },
     "liveServer.settings.port": 5501
 }
