@@ -6,4 +6,4 @@ CSPOM (Cloud SWMM Hydro-Parameters Optimization Model)
 2. Automatic optimization of hydrological parameters
 3. Time savings in calibration
 
-./graphical_abstract.tif
+![graphical abstract](./graphical_abstract.tif)
